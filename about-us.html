@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Onetown - About Housing</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff4ed;
+    }
+
+    /* Header */
+    .navbar {
+      background-color: #005c42;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 3rem;
+    }
+
+    .navbar .left {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .navbar .left img {
+      height: 20px;
+    }
+
+    .navbar .left span {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .navbar .center a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .navbar .right {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .navbar .right a {
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .add-btn {
+      color: white;
+    }
+
+    .contact-btn {
+      background-color: #ff5c00;
+      color: white;
+    }
+
+    /* Section */
+    .section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4rem 3rem;
+    }
+
+    .section .left {
+      flex: 1;
+    }
+
+    .section .left h1 {
+      font-size: 2.5rem;
+      color: #005c42;
+    }
+
+    .section .left p {
+      color: #555;
+      margin: 1rem 0 2rem;
+      max-width: 500px;
+    }
+
+    .section .left button {
+      padding: 0.75rem 1.5rem;
+      border: 2px solid #005c42;
+      background: none;
+      color: #005c42;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .section .right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .section .right img {
+      clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0% 50%);
+      height: 300px;
+      object-fit: cover;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .section .right {
+        margin-top: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="left">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/home.png" alt="home icon"/>
+      <span>Onetown</span>
+    </div>
+    <nav class="center">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Properties</a>
+      <a href="#">Blog</a>
+    </nav>
+    <div class="right">
+      <a href="#" class="add-btn">Add Property</a>
+      <a href="#" class="contact-btn">Contact Sales</a>
+    </div>
+  </header>
+
+  <!-- About Housing Section -->
+  <section class="section">
+    <div class="left">
+      <h1>About Housing</h1>
+      <p>
+        Javascript writing capital markets. Figma using Tik-Toker libertarian. Protocol writing, inflated B2B SaaS series product Hunt posting digital
+      </p>
+      <button>Contact Us</button>
+    </div>
+    <div class="right">
+      <img src="https://images.unsplash.com/photo-1587750051418-2811e7e1fc3b" alt="Family" />
+    </div>
+  </section>
+
+</body>
+</html>
